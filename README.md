@@ -10,6 +10,8 @@ My Plug-in overcomes this limitation and allows selection in the viewport. This 
 
 The viewport selection makes it possible now, to reduce the displayed entities with the Display Group tool first. For example when a lot of standalone face and line parts were in the imported file and you want to get rid of them in Abaqus/CAE. You could now hide all cells with one Display Group action and delete all remaining instance in the viewport with one drag-box selection.
 
+Make sure to always confirm selection before clicking Apply or OK.
+The Plug-in UI was created with the RSG-Plugin. Tis brings some limitations regarding catching user errors and showing messages.
 
 
 See also the demo video in the media folder.
