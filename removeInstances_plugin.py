@@ -88,7 +88,7 @@ toolset.registerGuiMenuButton(
     kernelInitString='import delete_kernel',
     applicableModules=['Assembly','Step','Interaction', 'Load'],
     version='1.0',
-    author='Matthias Ernst, Dassault Systemes Germany',
+    author='Matthias Ernst',
     description='Plug-In to remove (= delete or suppress) instances from viewport. '\
                 'Always confirm selection for each region with DONE button or middle mouse button before pressing Apply or OK.'\
                 '\n\nThis is not an official Dassault Systemes product.',
