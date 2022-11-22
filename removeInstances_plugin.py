@@ -91,6 +91,6 @@ toolset.registerGuiMenuButton(
     author='Matthias Ernst',
     description='Plug-In to remove (= delete or suppress) instances from viewport. '\
                 'Always confirm selection for each region with DONE button or middle mouse button before pressing Apply or OK.'\
-                '\n\nThis is not an official Dassault Systemes product.',
+                '\n\nUsage at your own risk.',
     helpUrl='N/A'
 )
