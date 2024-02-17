@@ -21,24 +21,24 @@ class RemoveInstances_plugin(AFXForm):
             objectName='delete_kernel', registerQuery=False)
         pickedDefault = ''
         self.kw_instancesKw = AFXObjectKeyword(self.cmd, 'kw_instances', TRUE, pickedDefault)
-        if not self.radioButtonGroups.has_key('kw_box1'):
+        if 'kw_box1' not in self.radioButtonGroups:
             self.kw_box1Kw1 = AFXIntKeyword(None, 'kw_box1Dummy', True)
             self.kw_box1Kw2 = AFXStringKeyword(self.cmd, 'kw_box1', True)
             self.radioButtonGroups['kw_box1'] = (self.kw_box1Kw1, self.kw_box1Kw2, {})
         self.radioButtonGroups['kw_box1'][2][113] = 'Delete'
         self.kw_box1Kw1.setValue(113)
-        if not self.radioButtonGroups.has_key('kw_box1'):
+        if 'kw_box1' not in self.radioButtonGroups:
             self.kw_box1Kw1 = AFXIntKeyword(None, 'kw_box1Dummy', True)
             self.kw_box1Kw2 = AFXStringKeyword(self.cmd, 'kw_box1', True)
             self.radioButtonGroups['kw_box1'] = (self.kw_box1Kw1, self.kw_box1Kw2, {})
         self.radioButtonGroups['kw_box1'][2][114] = 'Suppress'
-        if not self.radioButtonGroups.has_key('kw_box2'):
+        if 'kw_box2' not in self.radioButtonGroups:
             self.kw_box2Kw1 = AFXIntKeyword(None, 'kw_box2Dummy', True)
             self.kw_box2Kw2 = AFXStringKeyword(self.cmd, 'kw_box2', True)
             self.radioButtonGroups['kw_box2'] = (self.kw_box2Kw1, self.kw_box2Kw2, {})
         self.radioButtonGroups['kw_box2'][2][115] = 'Remove selected'
         self.kw_box2Kw1.setValue(115)
-        if not self.radioButtonGroups.has_key('kw_box2'):
+        if 'kw_box2' not in self.radioButtonGroups:
             self.kw_box2Kw1 = AFXIntKeyword(None, 'kw_box2Dummy', True)
             self.kw_box2Kw2 = AFXStringKeyword(self.cmd, 'kw_box2', True)
             self.radioButtonGroups['kw_box2'] = (self.kw_box2Kw1, self.kw_box2Kw2, {})
@@ -88,9 +88,9 @@ toolset.registerGuiMenuButton(
     kernelInitString='import delete_kernel',
     applicableModules=['Assembly','Step','Interaction', 'Load'],
     version='1.0',
-    author='Matthias Ernst',
+    author='Matthias Ernst, Dassault Systemes Germany',
     description='Plug-In to remove (= delete or suppress) instances from viewport. '\
                 'Always confirm selection for each region with DONE button or middle mouse button before pressing Apply or OK.'\
-                '\n\nUsage at your own risk.',
+                '\n\nThis is not an official Dassault Systemes product.',
     helpUrl='N/A'
 )

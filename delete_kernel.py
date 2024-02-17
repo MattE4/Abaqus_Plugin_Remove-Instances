@@ -1,3 +1,4 @@
+from __future__ import print_function
 from abaqus import *
 from abaqusConstants import *
 
@@ -75,11 +76,11 @@ kw_parts=None):
     if kw_box1 == 'Delete':
         for i in use_instances:
             del a.features[str(i)]
-        print '\nDeleted '+str(len(use_instances))+' instance(s)'
+        print('\nDeleted '+str(len(use_instances))+' instance(s)')
     else:
         for i in use_instances:
             a.features[str(i)].suppress()
-        print '\nSuppressed '+str(len(use_instances))+' instance(s)'            
+        print('\nSuppressed '+str(len(use_instances))+' instance(s)')
     
     a.regenerate()
     session.viewports[vpName].enableColorCodeUpdates()
@@ -100,4 +101,4 @@ kw_parts=None):
 
         for i in unused_parts:
             del mdb.models[modelName].parts[i]
-        print 'Deleted '+str(len(unused_parts))+' part(s)'
+        print('Deleted '+str(len(unused_parts))+' part(s)')
